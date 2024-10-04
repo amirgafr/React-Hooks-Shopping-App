@@ -37,13 +37,7 @@ function Details() {
             onClick={() => handelFav(recipeDetails)}
             className=" mt-4 inline-block rounded-lg bg-gray-700 hover:bg-gray-900 px-6 py-3.5 text-center font-medium text-white"
           >
-            {favoritesList &&
-            favoritesList.length > 0 &&
-            favoritesList.findIndex(
-              (item) => item.id === recipeDetails?.recipe?.id
-            ) !== -1
-              ? "Remove from favorites"
-              : "Add to favorites"}
+            Add to Favotite
           </Link>
         </div>
         <div className="lg:col-span-5 lg:mt-0">
